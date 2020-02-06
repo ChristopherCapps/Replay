@@ -1,10 +1,8 @@
 ﻿// Learn more about F# at http://fsharp.org
 
-open Engine
-
 [<EntryPoint>]
 let main argv =
-    Replay.Engines.ScummVM.run |> ignore
+    //Replay.Engines.ScummVM.run |> ignore
     let results = CLI.parser.Parse argv
     printfn "%A" (CLI.parser.PrintUsage())
     printfn "%A" results

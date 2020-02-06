@@ -1,0 +1,35 @@
+
+Main config:
+* Root dir
+
+Each "engine" configured by:
+* Relative path to executable
+* Relative path to supported titles
+
+Each engine offers:
+* Catalog of available titles, with vendor
+* Listing of options unique to the engine; i.e., audio, video, platform, input
+
+.replay
+    config.json
+
+replay config --root=/Volumes/OldSkool/Titles
+
+replay list
+
+replay v1.0.1-32
+
+Id          Title
+==========  ==========================================
+hero        Hero's Quest: So You Want To Be A Hero
+
+
+URI
+<engine>:<uid>?sound=adlib&video=cga&platform=pcjr
+
+replay start scummvm:kq1?sound=mt32&video=vga
+
+ccapps$ replay list scummvm:*
+replay v1.0.1-32
+starting scummvm:kq1?sound=mt32&video=vga
+
