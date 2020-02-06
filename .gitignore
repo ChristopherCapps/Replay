@@ -1,0 +1,10 @@
+.fake/
+packages/
+paket-files/
+nupkg/
+obj/
+bin/
+gen-paket-lock-files/
+/.vs
+.ionide/
+.DS_Store
